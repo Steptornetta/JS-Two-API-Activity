@@ -1,0 +1,31 @@
+body 
+{
+	background-color: silver;
+}
+
+h1 
+{
+	font-family: verdana;
+	background-color: #add8e6;
+}
+
+#welcomemsg 
+{
+	border: 2px dashed #add8e6;
+	font-family: verdana;
+}
+
+#nametxt
+{
+	font-family: courier;
+}
+
+#wordtxt
+{
+	font-family: courier;
+}
+
+#welcometable
+{
+	background-image: url("bookimage.jpg");
+}

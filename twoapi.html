@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>TwoApi HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="twoapi.css">
+  </head>
+
+  <body>
+
+    <table id = "welcometable" width="100%" style=" border: solid;">
+      <tr>
+      <td><h1 align="center">Welcome to the Random Word Dictionary!</h1></td>
+      </tr>
+    </table>
+
+    <table width= "100%" style=" border: solid;">
+      <tr>
+        <th id = "nametxt">Enter Your Name:<input type="text" id = "username"><button = onclick="sayHello()">Submit</button></th>
+        <th id = "wordtxt">Enter Your Own Word:<input type="text" id="userword"><button = onclick="addUserWord()">Submit</button></th>
+      </tr>
+      <tr>
+        <td colspan="2"><p id = "welcomemsg"></p></td>
+      </tr>
+    </table>
+
+      
+    <table id = "tablelist" width = "100%" style = "border:solid;">
+      <tr style = "background-color: #add8e6;">
+        <th>Word<button = onclick="addWord()">Add Random Word</button></th>
+        <th>Definition</th>
+        <th>Pronunciation</th>
+        <th>Syllables</th>
+        <th>Favorite <button id = "favorite" = onclick="addFavoriteWord()">Add Favorite</button></th>
+      </tr>
+
+      <tr id = "tablerowid"></tr>
+
+    </table>
+
+    <table width = "100%" style = "border:solid;">
+      <tr style = "background-color: #add8e6;">
+        <th>Select Word</th>
+        <th>Another Definition</th>
+      </tr>
+      <tr>
+        <th><select id = "wordlist" onchange="moreInfo()"></select>
+        </th>
+
+        <td><p id = "morewordinfo"></p></td>
+      </tr>
+    </table>
+    <script src = "twoapi.js" defer></script>
+  </body>
+
+
+</html>
